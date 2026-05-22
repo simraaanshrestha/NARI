@@ -1,0 +1,50 @@
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/700.css";
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pearl text-obsidian font-sans transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply bg-emerald-deep text-pearl;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply px-8 py-3 bg-gold text-white font-bold tracking-widest uppercase transition-all duration-300 hover:bg-gold-dark hover:scale-105 active:scale-95 disabled:opacity-50;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-none p-6;
+  }
+}
+
+/* Custom Cursor Styles */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid theme('colors.gold.DEFAULT');
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.custom-cursor-grow {
+  transform: scale(3);
+  background-color: theme('colors.gold.DEFAULT');
+  opacity: 0.3;
+}
