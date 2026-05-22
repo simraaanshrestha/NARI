@@ -18,31 +18,31 @@ interface ProductContextType {
 const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
 const initialProducts: Product[] = [
-  { 
-    id: 1, 
-    name: 'Éclat Solitaire', 
-    price: 'Rs 12,400', 
+  {
+    id: 1,
+    name: 'Éclat Solitaire',
+    price: 'Rs 12,400',
     category: 'Rings',
     image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=800'
   },
-  { 
-    id: 2, 
-    name: 'Nari Heritage Necklace', 
-    price: 'Rs 28,000', 
+  {
+    id: 2,
+    name: 'Nari Heritage Necklace',
+    price: 'Rs 28,000',
     category: 'Necklaces',
     image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800'
   },
-  { 
-    id: 3, 
-    name: 'Aura Pearl Earrings', 
-    price: 'Rs 8,200', 
+  {
+    id: 3,
+    name: 'Aura Pearl Earrings',
+    price: 'Rs 8,200',
     category: 'Earrings',
     image: 'https://images.unsplash.com/photo-1535633302723-9993d577456e?auto=format&fit=crop&q=80&w=800'
   },
-  { 
-    id: 4, 
-    name: 'Celestial Diamond Band', 
-    price: 'Rs 15,600', 
+  {
+    id: 4,
+    name: 'Celestial Diamond Band',
+    price: 'Rs 15,600',
     category: 'Rings',
     image: 'https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&q=80&w=800'
   },
